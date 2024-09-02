@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 200vh;
+}
+
+
+.layout-container {
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+    min-height: 200vh;
+
+}
+
+.navbar-container {
+    background-color: #2b211d;
+    padding-right: .4rem;
+}
+
+.content-container {
+    flex-grow: 1;
+}
+
+
+.navbar-container nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5%;
+}
+
+.navbar-container nav ul {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.navbar-container nav ul li {
+    list-style: none;
+    margin: 0;
+    display: flex;
+
+
+    border-radius: 0 20px 20px 0;
+}
+
+.navbar-container nav ul li[selected] {
+   background-color: #735645;
+   border-bottom: #F2E4D8 solid 1px;
+   border-top: #F2E4D8 solid 1px;
+   border-right: #F2E4D8 solid 1px;
+   color: #F2E4D8;
+}
+.navbar-container nav ul li[selected]:hover a {
+    color: #f2e4d8a1;
+ }
+.navbar-container nav ul li a {
+    color: #F2E4D8;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 0.4rem;
+    width: 100%;
+}
+
+.navbar-container nav ul li:hover a {
+    color: #735645;
+}
+
+.content-container .hero {
+    height: 35rem;
+}
+
+.content-container>section:nth-child(odd) {
+    background-color: #735645;
+    color: #F2E4D8;
+}
+
+.content-container>section:nth-child(even) {
+    background-color: #F2E4D8;
+    color: #735645;
+}
